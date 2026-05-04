@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antigravity Color System - Sambasiva Website</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/antigravity-colors.css">
+  <link rel="stylesheet" href="assets/css/premium-theme.css">
+  <link rel="stylesheet" href="assets/css/enhanced-navigation.css">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <style>
+    .color-showcase {
+      padding: 2rem;
+      background: var(--white);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-md);
+      margin: 2rem 0;
+    }
+    .color-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    .color-card {
+      padding: 2rem;
+      border-radius: var(--radius-lg);
+      text-align: center;
+      color: white;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    .color-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+    .color-name {
+      font-size: 1.125rem;
+      margin-bottom: 0.5rem;
+    }
+    .color-hex {
+      font-family: 'Courier New', monospace;
+      font-size: 0.875rem;
+      opacity: 0.9;
+    }
+    .demo-section {
+      background: var(--cream-dark);
+      padding: 3rem 2rem;
+      margin: 2rem 0;
+      border-radius: var(--radius-xl);
+    }
+    .demo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    .demo-card {
+      background: var(--white);
+      padding: 2rem;
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-md);
+      transition: all 0.4s ease;
+      border: 1px solid rgba(13, 139, 139, 0.1);
+    }
+    .demo-card:hover {
+      transform: translateY(-12px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--primary);
+    }
+    .hero-demo {
+      background: linear-gradient(135deg, var(--cream) 0%, #E8F5F5 50%, #F5F0FA 100%);
+      padding: 4rem 2rem;
+      text-align: center;
+      border-radius: var(--radius-xl);
+      margin: 2rem 0;
+    }
+    .button-showcase {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 2rem 0;
+    }
+    .psychology-info {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--tertiary) 100%);
+      color: white;
+      padding: 2rem;
+      border-radius: var(--radius-xl);
+      margin: 2rem 0;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header -->
+    <div style="text-align: center; padding: 3rem 0;">
+      <h1 style="color: var(--primary); margin-bottom: 1rem;">Antigravity Color System</h1>
+      <p style="color: var(--text-medium); font-size: 1.125rem;">Professional Psychology Website Colors - Trust, Healing & Growth</p>
+    </div>
+
+    <!-- Color Palette Showcase -->
+    <div class="color-showcase">
+      <h2 style="text-align: center; color: var(--text-dark); margin-bottom: 2rem;">Complete Color Palette</h2>
+      
+      <div class="color-grid">
+        <div class="color-card" style="background: var(--primary);">
+          <div class="color-name">Primary</div>
+          <div class="color-hex">#0D8B8B</div>
+          <div style="font-size: 0.75rem; margin-top: 0.5rem;">Ocean Teal</div>
+        </div>
+        
+        <div class="color-card" style="background: var(--secondary);">
+          <div class="color-name">Secondary</div>
+          <div class="color-hex">#6B9B7A</div>
+          <div style="font-size: 0.75rem; margin-top: 0.5rem;">Forest Sage</div>
+        </div>
+        
+        <div class="color-card" style="background: var(--gold);">
+          <div class="color-name">Gold</div>
+          <div class="color-hex">#D4A24C</div>
+          <div style="font-size: 0.75rem; margin-top: 0.5rem;">Sunrise Gold</div>
+        </div>
+        
+        <div class="color-card" style="background: var(--coral);">
+          <div class="color-name">Coral</div>
+          <div class="color-hex">#E07A5F</div>
+          <div style="font-size: 0.75rem; margin-top: 0.5rem;">Sunset Coral</div>
+        </div>
+        
+        <div class="color-card" style="background: var(--tertiary);">
+          <div class="color-name">Tertiary</div>
+          <div class="color-hex">#8B7CB5</div>
+          <div style="font-size: 0.75rem; margin-top: 0.5rem;">Mystic Lavender</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Button System Demo -->
+    <div class="demo-section">
+      <h2 style="text-align: center; color: var(--text-dark); margin-bottom: 2rem;">Button System</h2>
+      
+      <div class="button-showcase">
+        <button class="btn btn-primary">
+          <i data-lucide="heart"></i>
+          Primary Button
+        </button>
+        
+        <button class="btn btn-secondary">
+          <i data-lucide="users"></i>
+          Secondary Button
+        </button>
+        
+        <button class="btn btn-gold">
+          <i data-lucide="star"></i>
+          Gold Button
+        </button>
+        
+        <button class="btn btn-coral">
+          <i data-lucide="phone"></i>
+          Coral Button
+        </button>
+      </div>
+      
+      <div style="text-align: center; margin-top: 2rem;">
+        <p style="color: var(--text-medium);">Hover over buttons to see the professional color transitions</p>
+      </div>
+    </div>
+
+    <!-- Hero Section Demo -->
+    <div class="hero-demo">
+      <h2 style="color: var(--text-dark); margin-bottom: 2rem;">Hero Section</h2>
+      <p style="color: var(--text-medium); font-size: 1.125rem; margin-bottom: 2rem;">Beautiful gradient background with trust-building colors</p>
+      
+      <div class="button-showcase">
+        <button class="btn btn-primary btn-lg">
+          <i data-lucide="calendar"></i>
+          Book Session
+        </button>
+        
+        <button class="btn btn-gold btn-lg">
+          <i data-lucide="phone"></i>
+          Call Now
+        </button>
+      </div>
+    </div>
+
+    <!-- Service Cards Demo -->
+    <div class="demo-section">
+      <h2 style="text-align: center; color: var(--text-dark); margin-bottom: 2rem;">Service Cards</h2>
+      
+      <div class="demo-grid">
+        <div class="service-card">
+          <div style="color: var(--primary); margin-bottom: 1rem;">
+            <i data-lucide="heart" style="width: 48px; height: 48px;"></i>
+          </div>
+          <h3 style="color: var(--text-dark); margin-bottom: 1rem;">Psychology Services</h3>
+          <p style="color: var(--text-medium); margin-bottom: 1.5rem;">Professional counseling for mental wellness and personal growth.</p>
+          <button class="btn btn-primary">Learn More</button>
+        </div>
+        
+        <div class="service-card">
+          <div style="color: var(--secondary); margin-bottom: 1rem;">
+            <i data-lucide="graduation-cap" style="width: 48px; height: 48px;"></i>
+          </div>
+          <h3 style="color: var(--text-dark); margin-bottom: 1rem;">Training Programs</h3>
+          <p style="color: var(--text-medium); margin-bottom: 1.5rem;">Life skills and soft skills development for all ages.</p>
+          <button class="btn btn-secondary">Learn More</button>
+        </div>
+        
+        <div class="service-card">
+          <div style="color: var(--gold); margin-bottom: 1rem;">
+            <i data-lucide="home" style="width: 48px; height: 48px;"></i>
+          </div>
+          <h3 style="color: var(--text-dark); margin-bottom: 1rem;">Home Visits</h3>
+          <p style="color: var(--text-medium); margin-bottom: 1.5rem;">Private counseling sessions in the comfort of your home.</p>
+          <button class="btn btn-gold">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Psychology Info Section -->
+    <div class="psychology-info">
+      <h2 style="margin-bottom: 1.5rem;">Color Psychology for Mental Health</h2>
+      <p style="font-size: 1.125rem; margin-bottom: 2rem; opacity: 0.9;">
+        This color system is specifically designed for psychology websites, combining trust, healing, and growth
+      </p>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: left;">
+        <div>
+          <h4 style="color: var(--gold); margin-bottom: 0.5rem;">Ocean Teal</h4>
+          <p style="opacity: 0.8; font-size: 0.875rem;">Trust, stability, healing</p>
+        </div>
+        <div>
+          <h4 style="color: var(--secondary); margin-bottom: 0.5rem;">Forest Sage</h4>
+          <p style="opacity: 0.8; font-size: 0.875rem;">Growth, nature, balance</p>
+        </div>
+        <div>
+          <h4 style="color: var(--coral); margin-bottom: 0.5rem;">Sunset Coral</h4>
+          <p style="opacity: 0.8; font-size: 0.875rem;">Compassion, warmth, relationships</p>
+        </div>
+        <div>
+          <h4 style="color: var(--tertiary); margin-bottom: 0.5rem;">Mystic Lavender</h4>
+          <p style="opacity: 0.8; font-size: 0.875rem;">Wisdom, clarity, insight</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Technical Specifications -->
+    <div class="color-showcase">
+      <h2 style="text-align: center; color: var(--text-dark); margin-bottom: 2rem;">Technical Specifications</h2>
+      
+      <div style="background: var(--cream-dark); padding: 2rem; border-radius: var(--radius-lg); font-family: 'Courier New', monospace; font-size: 0.875rem;">
+        <h3 style="color: var(--text-dark); margin-bottom: 1rem;">CSS Variables:</h3>
+        <pre style="background: var(--white); padding: 1rem; border-radius: var(--radius-md); overflow-x: auto;">
+:root {
+  /* Primary - Ocean Teal */
+  --primary: #0D8B8B;
+  --primary-light: #14A5A5;
+  --primary-dark: #076666;
+  
+  /* Secondary - Forest Sage */
+  --secondary: #6B9B7A;
+  --secondary-light: #8BB89A;
+  
+  /* Gold - Sunrise Gold */
+  --gold: #D4A24C;
+  --gold-light: #E8BE6E;
+  
+  /* Coral - Sunset Coral */
+  --coral: #E07A5F;
+  --coral-light: #EF9A85;
+  
+  /* Tertiary - Mystic Lavender */
+  --tertiary: #8B7CB5;
+  --tertiary-light: #A899CC;
+}</pre>
+      </div>
+    </div>
+
+    <!-- Implementation Guide -->
+    <div class="color-showcase">
+      <h2 style="text-align: center; color: var(--text-dark); margin-bottom: 2rem;">Implementation Guide</h2>
+      
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+        <div style="background: var(--cream-dark); padding: 2rem; border-radius: var(--radius-lg);">
+          <h3 style="color: var(--primary); margin-bottom: 1rem;">How to Use</h3>
+          <ol style="color: var(--text-medium); line-height: 1.6;">
+            <li style="margin-bottom: 0.5rem;">Link antigravity-colors.css in your HTML</li>
+            <li style="margin-bottom: 0.5rem;">Use CSS variables for consistency</li>
+            <li style="margin-bottom: 0.5rem;">Apply button classes for CTAs</li>
+            <li style="margin-bottom: 0.5rem;">Use card components for services</li>
+          </ol>
+        </div>
+        
+        <div style="background: var(--cream-dark); padding: 2rem; border-radius: var(--radius-lg);">
+          <h3 style="color: var(--gold); margin-bottom: 1rem;">Best Practices</h3>
+          <ul style="color: var(--text-medium); line-height: 1.6;">
+            <li style="margin-bottom: 0.5rem;">Primary color for main branding</li>
+            <li style="margin-bottom: 0.5rem;">Gold for CTAs and highlights</li>
+            <li style="margin-bottom: 0.5rem;">Coral for relationships and warmth</li>
+            <li style="margin-bottom: 0.5rem;">Lavender for wisdom and clarity</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

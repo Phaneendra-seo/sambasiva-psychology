@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Sambasiva - Psychology & Mental Health Insights</title>
+    <meta name="description"
+        content="Expert insights on mental health, relationships, stress management, and personal development from a professional psychologist.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/premium-theme.css">
+    <!-- Enhanced Navigation CSS -->
+    <link rel="stylesheet" href="assets/css/enhanced-navigation.css">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://sambasiva.com/blog-new.html">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .blog-card {
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .blog-card:hover .blog-image {
+            transform: scale(1.05);
+        }
+
+        .blog-image {
+            transition: transform 0.5s ease;
+        }
+
+        .category-btn {
+            padding: 0.6rem 1.25rem;
+            border-radius: var(--radius-full);
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid rgba(13, 139, 139, 0.15);
+            background: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .category-btn:hover,
+        .category-btn.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="navbar-inner">
+                <!-- Logo -->
+                <a href="index-new.html" class="navbar-logo">
+                    SAMBASIVA<span class="logo-dot"></span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <ul class="navbar-menu">
+                    <li><a href="index-new.html" class="navbar-link"><i data-lucide="home"></i>Home</a></li>
+                    <li><a href="about-new.html" class="navbar-link"><i data-lucide="user"></i>About</a></li>
+                    <li class="dropdown">
+                        <a href="services-new.html" class="navbar-link dropdown-toggle"><i data-lucide="heart"></i>Psychology
+                            Services</a>
+                        <div class="mega-menu">
+                            <div class="mega-menu-grid">
+                                <div class="mega-menu-section">
+                                    <h4>Personal Growth</h4>
+                                    <a href="services/self-esteem-identity.html"><i data-lucide="user-check"></i>Self-Esteem &
+                                        Identity</a>
+                                    <a href="services/stress-anxiety-therapy.html"><i data-lucide="brain"></i>Stress & Anxiety
+                                        Therapy</a>
+                                    <a href="services/crisis-support.html"><i data-lucide="shield-check"></i>Crisis Support</a>
+                                </div>
+                                <div class="mega-menu-section">
+                                    <h4>Relationships</h4>
+                                    <a href="services/relationship-counselling.html"><i data-lucide="users"></i>Relationship
+                                        Counselling</a>
+                                    <a href="services/marital-counselling.html"><i data-lucide="heart"></i>Marital Counselling</a>
+                                    <a href="services/family-therapy.html"><i data-lucide="home"></i>Family Therapy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="training-new.html" class="navbar-link dropdown-toggle"><i data-lucide="graduation-cap"></i>Training</a>
+                        <div class="dropdown-menu">
+                            <a href="training/life-skills-training.html"><i data-lucide="star"></i>Life Skills Training</a>
+                            <a href="training/soft-skills-employability.html"><i data-lucide="briefcase"></i>Soft Skills &
+                                Employability</a>
+                            <a href="training/personality-development.html"><i data-lucide="sparkles"></i>Personality
+                                Development</a>
+                            <a href="training/communication-skills.html"><i data-lucide="message-circle"></i>Communication
+                                Skills</a>
+                        </div>
+                    </li>
+                    <li><a href="blog-new.html" class="navbar-link active"><i data-lucide="book-open"></i>Blog</a></li>
+                    <li><a href="awards-gallery.html" class="navbar-link"><i data-lucide="award"></i>Awards</a></li>
+                    <li><a href="contact-new.html" class="navbar-link"><i data-lucide="phone"></i>Contact</a></li>
+                </ul>
+
+                <!-- CTA Button -->
+                <div class="navbar-cta desktop">
+                    <a href="contact-new.html" class="btn btn-primary btn-sm">
+                        <i data-lucide="calendar"></i>
+                        <span>Book Session</span>
+                    </a>
+                </div>
+
+                <!-- Mobile Toggle -->
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobile-menu">
+                <ul class="navbar-menu">
+                    <li><a href="index-new.html" class="navbar-link"><i data-lucide="home"></i>Home</a></li>
+                    <li><a href="about-new.html" class="navbar-link"><i data-lucide="user"></i>About</a></li>
+                    <li class="dropdown">
+                        <a href="services-new.html" class="navbar-link dropdown-toggle"><i data-lucide="heart"></i>Psychology
+                            Services</a>
+                        <div class="dropdown-menu">
+                            <a href="services/self-esteem-identity.html"><i data-lucide="user-check"></i>Self-Esteem &
+                                Identity</a>
+                            <a href="services/stress-anxiety-therapy.html"><i data-lucide="brain"></i>Stress & Anxiety
+                                Therapy</a>
+                            <a href="services/crisis-support.html"><i data-lucide="shield-check"></i>Crisis Support</a>
+                            <a href="services/relationship-counselling.html"><i data-lucide="users"></i>Relationship
+                                Counselling</a>
+                            <a href="services/marital-counselling.html"><i data-lucide="heart"></i>Marital Counselling</a>
+                            <a href="services/family-therapy.html"><i data-lucide="home"></i>Family Therapy</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="training-new.html" class="navbar-link dropdown-toggle"><i data-lucide="graduation-cap"></i>Training</a>
+                        <div class="dropdown-menu">
+                            <a href="training/life-skills-training.html"><i data-lucide="star"></i>Life Skills Training</a>
+                            <a href="training/soft-skills-employability.html"><i data-lucide="briefcase"></i>Soft Skills &
+                                Employability</a>
+                            <a href="training/personality-development.html"><i data-lucide="sparkles"></i>Personality
+                                Development</a>
+                            <a href="training/communication-skills.html"><i data-lucide="message-circle"></i>Communication
+                                Skills</a>
+                        </div>
+                    </li>
+                    <li><a href="blog-new.html" class="navbar-link active"><i data-lucide="book-open"></i>Blog</a></li>
+                    <li><a href="awards-gallery.html" class="navbar-link"><i data-lucide="award"></i>Awards</a></li>
+                    <li><a href="contact-new.html" class="navbar-link"><i data-lucide="phone"></i>Contact</a></li>
+                    <li><a href="contact-new.html" class="btn btn-primary w-full"><i data-lucide="calendar"></i>Book
+                            Session</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header with Modern Gradient -->
+    <section class="section"
+        style="padding-top: 140px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); position: relative; overflow: hidden;">
+        <div
+            style="position: absolute; inset: 0; background: rgba(0,0,0,0.2); z-index: 1;">
+        </div>
+        <div class="container text-center" style="position: relative; z-index: 2;">
+            <!-- Professional Badge -->
+            <div style="background: rgba(255,255,255,0.15); border: 2px solid rgba(255,255,255,0.3); border-radius: 50px; padding: 0.75rem 1.5rem; display: inline-flex; align-items: center; gap: 0.75rem; margin-bottom: 2rem; backdrop-filter: blur(10px);">
+                <div style="width: 12px; height: 12px; background: #4ade80; border-radius: 50%; animation: pulse 2s infinite;"></div>
+                <span style="color: white; font-weight: 600; font-size: 0.9rem;">Blog & Insights</span>
+            </div>
+            
+            <h1 class="section-title" style="color: white; font-size: 3rem; margin-bottom: 1.5rem;">Insights for a <span style="color: #fbbf24;">Healthier Mind</span></h1>
+            <p class="section-subtitle" style="color: rgba(255,255,255,0.9); max-width: 650px; margin: 0 auto; font-size: 1.2rem; line-height: 1.6;">
+                Practical wisdom on mental health, relationships, personal growth, and living a balanced, fulfilling life.
+            </p>
+        </div>
+    </section>
+
+    <!-- Featured Post -->
+    <section class="section" style="background: white; padding-bottom: 2rem;">
+        <div class="container">
+            <div class="card reveal"
+                style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 0; overflow: hidden; padding: 0; border: none; box-shadow: var(--shadow-lg);">
+                <div style="overflow: hidden;"><img
+                        src="https://images.unsplash.com/photo-1499209974431-9dddcece7f88?w=700&h=500&fit=crop"
+                        alt="Featured Post" class="blog-image" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div
+                    style="padding: 3rem; display: flex; flex-direction: column; justify-content: center; background: linear-gradient(135deg, #FAF7F2 0%, #F5F0FA 100%);">
+                    <span
+                        style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.4rem 1rem; background: linear-gradient(135deg, #14A5A5 0%, #0D8B8B 100%); color: white; font-size: 0.8rem; font-weight: 600; border-radius: var(--radius-full); margin-bottom: 1.25rem; width: fit-content;"><i
+                            data-lucide="flame" style="width: 12px; height: 12px;"></i>Featured</span>
+                    <h2 style="font-size: 1.75rem; margin-bottom: 1rem; line-height: 1.35;">Understanding Anxiety: 7
+                        Evidence-Based Strategies That Actually Work</h2>
+                    <p style="color: var(--text-light); line-height: 1.75; margin-bottom: 1.5rem;">Learn scientifically
+                        proven ways to manage anxiety and take back control of your mental peace...</p>
+                    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                        <img loading="lazy" src="https://i.pravatar.cc/50?img=11"
+                            style="width: 45px; height: 45px; border-radius: 50%;">
+                        <div><span style="font-weight: 600; font-size: 0.95rem;">Sambasiva</span><br><span
+                                style="font-size: 0.85rem; color: var(--text-light);">Jan 28, 2026 · 8 min read</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary" style="width: fit-content;"><span>Read Article</span><i
+                            data-lucide="arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section style="padding: 2rem 0;">
+        <div class="container">
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: center;">
+                <button class="category-btn active">All Topics</button>
+                <button class="category-btn" style="--cat-color: var(--primary);">Mental Health</button>
+                <button class="category-btn" style="--cat-color: var(--coral);">Relationships</button>
+                <button class="category-btn" style="--cat-color: var(--gold);">Stress & Anxiety</button>
+                <button class="category-btn" style="--cat-color: var(--secondary);">Personal Growth</button>
+                <button class="category-btn" style="--cat-color: var(--tertiary);">Life Skills</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="section" style="background: var(--cream); padding-top: 2rem;">
+        <div class="container">
+            <div class="grid-3" style="gap: 2rem;">
+                <!-- Card 1 - Coral -->
+                <article class="card blog-card reveal" style="padding: 0;">
+                    <div style="overflow: hidden; height: 220px;"><img
+                            src="https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=400&h=280&fit=crop"
+                            class="blog-image" alt="" style="width: 100%; height: 100%; object-fit: cover;"></div>
+                    <div style="padding: 1.75rem;">
+                        <span
+                            style="display: inline-block; padding: 0.3rem 0.85rem; background: rgba(224, 122, 95, 0.12); color: var(--coral); font-size: 0.8rem; font-weight: 600; border-radius: var(--radius-full); margin-bottom: 0.85rem;">Relationships</span>
+                        <h3 style="font-size: 1.2rem; margin-bottom: 0.75rem; line-height: 1.4;">How to Rebuild Trust
+                            After Betrayal in Relationships</h3>
+                        <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem;">
+                            Practical steps that couples can take to heal after trust has been broken...</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 0.85rem; color: var(--text-muted);">Jan 25, 2026</span>
+                            <a href="#"
+                                style="color: var(--coral); font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; gap: 0.4rem;">Read<i
+                                    data-lucide="arrow-right" style="width: 16px; height: 16px;"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 2 - Gold -->
+                <article class="card blog-card reveal" style="padding: 0;">
+                    <div style="overflow: hidden; height: 220px;"><img
+                            src="https://images.unsplash.com/photo-1507537297725-24a1c029d3ca?w=400&h=280&fit=crop"
+                            class="blog-image" alt="" style="width: 100%; height: 100%; object-fit: cover;"></div>
+                    <div style="padding: 1.75rem;">
+                        <span
+                            style="display: inline-block; padding: 0.3rem 0.85rem; background: rgba(212, 162, 76, 0.12); color: var(--gold-dark); font-size: 0.8rem; font-weight: 600; border-radius: var(--radius-full); margin-bottom: 0.85rem;">Stress
+                            Management</span>
+                        <h3 style="font-size: 1.2rem; margin-bottom: 0.75rem; line-height: 1.4;">Work-Life Balance: 5
+                            Strategies to Avoid Burnout</h3>
+                        <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem;">
+                            Recognize the signs of burnout and implement healthy boundaries...</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 0.85rem; color: var(--text-muted);">Jan 22, 2026</span>
+                            <a href="#"
+                                style="color: var(--gold-dark); font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; gap: 0.4rem;">Read<i
+                                    data-lucide="arrow-right" style="width: 16px; height: 16px;"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 3 - Primary -->
+                <article class="card blog-card reveal" style="padding: 0;">
+                    <div style="overflow: hidden; height: 220px;"><img
+                            src="https://images.unsplash.com/photo-1493836512294-502baa1986e2?w=400&h=280&fit=crop"
+                            class="blog-image" alt="" style="width: 100%; height: 100%; object-fit: cover;"></div>
+                    <div style="padding: 1.75rem;">
+                        <span
+                            style="display: inline-block; padding: 0.3rem 0.85rem; background: rgba(13, 139, 139, 0.1); color: var(--primary); font-size: 0.8rem; font-weight: 600; border-radius: var(--radius-full); margin-bottom: 0.85rem;">Mental
+                            Health</span>
+                        <h3 style="font-size: 1.2rem; margin-bottom: 0.75rem; line-height: 1.4;">5 Signs You Need to
+                            Prioritize Your Mental Health Today</h3>
+                        <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem;">
+                            Recognizing when it's time to seek help is the first step to healing...</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 0.85rem; color: var(--text-muted);">Jan 18, 2026</span>
+                            <a href="#"
+                                style="color: var(--primary); font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; gap: 0.4rem;">Read<i
+                                    data-lucide="arrow-right" style="width: 16px; height: 16px;"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 4 - Sage -->
+                <article class="card blog-card reveal" style="padding: 0;">
+                    <div style="overflow: hidden; height: 220px;"><img
+                            src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&h=280&fit=crop"
+                            class="blog-image" alt="" style="width: 100%; height: 100%; object-fit: cover;"></div>
+                    <div style="padding: 1.75rem;">
+                        <span
+                            style="display: inline-block; padding: 0.3rem 0.85rem; background: rgba(107, 155, 122, 0.12); color: var(--secondary-dark); font-size: 0.8rem; font-weight: 600; border-radius: var(--radius-full); margin-bottom: 0.85rem;">Personal
+                            Growth</span>
+                        <h3 style="font-size: 1.2rem; margin-bottom: 0.75rem; line-height: 1.4;">Building Confidence: A
+                            Step-by-Step Guide</h3>
+                        <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem;">
+                            Practical exercises to boost your self-esteem and inner confidence...</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 0.85rem; color: var(--text-muted);">Jan 15, 2026</span>
+                            <a href="#"
+                                style="color: var(--secondary-dark); font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; gap: 0.4rem;">Read<i
+                                    data-lucide="arrow-right" style="width: 16px; height: 16px;"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 5 - Lavender -->
+                <article class="card blog-card reveal" style="padding: 0;">
+                    <div style="overflow: hidden; height: 220px;"><img
+                            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=400&h=280&fit=crop"
+                            class="blog-image" alt="" style="width: 100%; height: 100%; object-fit: cover;"></div>
+                    <div style="padding: 1.75rem;">
+                        <span
+                            style="display: inline-block; padding: 0.3rem 0.85rem; background: rgba(139, 124, 181, 0.12); color: var(--tertiary-dark); font-size: 0.8rem; font-weight: 600; border-radius: var(--radius-full); margin-bottom: 0.85rem;">Life
+                            Skills</span>
+                        <h3 style="font-size: 1.2rem; margin-bottom: 0.75rem; line-height: 1.4;">The Art of Active
+                            Listening in Professional Settings</h3>
+                        <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem;">
+                            Master this essential skill that transforms relationships at work...</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 0.85rem; color: var(--text-muted);">Jan 10, 2026</span>
+                            <a href="#"
+                                style="color: var(--tertiary-dark); font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; gap: 0.4rem;">Read<i
+                                    data-lucide="arrow-right" style="width: 16px; height: 16px;"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Card 6 - Coral -->
+                <article class="card blog-card reveal" style="padding: 0;">
+                    <div style="overflow: hidden; height: 220px;"><img
+                            src="https://images.unsplash.com/photo-1516195851888-6f1a981a862e?w=400&h=280&fit=crop"
+                            class="blog-image" alt="" style="width: 100%; height: 100%; object-fit: cover;"></div>
+                    <div style="padding: 1.75rem;">
+                        <span
+                            style="display: inline-block; padding: 0.3rem 0.85rem; background: rgba(224, 122, 95, 0.12); color: var(--coral); font-size: 0.8rem; font-weight: 600; border-radius: var(--radius-full); margin-bottom: 0.85rem;">Relationships</span>
+                        <h3 style="font-size: 1.2rem; margin-bottom: 0.75rem; line-height: 1.4;">Communication Secrets
+                            for Stronger Relationships</h3>
+                        <p style="color: var(--text-light); font-size: 0.95rem; line-height: 1.7; margin-bottom: 1rem;">
+                            Learn the art of effective communication that builds lasting bonds...</p>
+                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                            <span style="font-size: 0.85rem; color: var(--text-muted);">Jan 05, 2026</span>
+                            <a href="#"
+                                style="color: var(--coral); font-weight: 600; font-size: 0.9rem; display: flex; align-items: center; gap: 0.4rem;">Read<i
+                                    data-lucide="arrow-right" style="width: 16px; height: 16px;"></i></a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Load More Button -->
+            <div style="text-align: center; margin-top: 3rem;">
+                <button class="btn btn-secondary btn-lg"><span>Load More Articles</span><i
+                        data-lucide="chevron-down"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter with Gold Theme (Hope) -->
+    <section class="section"
+        style="background: linear-gradient(135deg, #E8BE6E 0%, #D4A24C 100%); color: white; position: relative; overflow: hidden;">
+        <div
+            style="position: absolute; inset: 0; background: radial-gradient(circle at 30% 50%, rgba(255,255,255,0.12) 0%, transparent 50%);">
+        </div>
+        <div class="container text-center reveal" style="position: relative; max-width: 650px;">
+            <i data-lucide="mail" style="width: 55px; height: 55px; margin-bottom: 1.25rem; opacity: 0.9;"></i>
+            <h2 style="font-size: 2.25rem; margin-bottom: 1rem;">Subscribe for Weekly Insights</h2>
+            <p style="font-size: 1.1rem; opacity: 0.95; margin-bottom: 2rem;">Get practical tips on mental health,
+                relationships, and personal growth delivered to your inbox every week.</p>
+            <form style="display: flex; gap: 0.75rem; max-width: 500px; margin: 0 auto;">
+                <input type="email" placeholder="Enter your email"
+                    style="flex: 1; padding: 1rem 1.5rem; border: none; border-radius: var(--radius-full); font-size: 1rem; outline: none;">
+                <button type="submit" class="btn btn-white btn-lg"
+                    style="padding: 1rem 2rem;"><span>Subscribe</span></button>
+            </form>
+        </div>
+    </section>
+
+      <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="index-new.html" style="font-family: var(--font-accent); font-size: 1.85rem; color: white; text-decoration: none; display: block; margin-bottom: 1.25rem; font-weight: 700; letter-spacing: -0.5px;">
+            SAMBASIVA<span style="color: var(--gold);">.</span>
+          </a>
+          <p>Dedicated to helping individuals and organizations achieve mental wellness through professional psychological support and life skills training.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#" aria-label="Youtube">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Explore -->
+        <div class="footer-column">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="index-new.html">Home</a></li>
+            <li><a href="about-new.html">About Me</a></li>
+            <li><a href="training-new.html">Training</a></li>
+            <li><a href="blog-new.html">Insights</a></li>
+            <li><a href="awards-gallery.html">Awards</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services/relationship-counselling.html">Relationship Counselling</a></li>
+            <li><a href="services-new.html">Stress Management</a></li>
+            <li><a href="training-new.html">Life Skills Training</a></li>
+            <li><a href="training-new.html">Corporate Programs</a></li>
+          </ul>
+        </div>
+
+        <!-- Connect & Newsletter -->
+        <div class="footer-column">
+          <h4>Connect</h4>
+          <div class="footer-contact-item">
+            <i data-lucide="mail"></i>
+            <span>hello@sambasiva.com</span>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="phone"></i>
+            <span>+91 98765 43210</span>
+          </div>
+          <div class="footer-contact-item">
+            <i data-lucide="map-pin"></i>
+            <span>Visakhapatnam, India</span>
+          </div>
+          
+          <div class="footer-newsletter">
+            <p>Subscribe for wellness tips</p>
+            <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event);">
+              <input type="email" class="newsletter-input" placeholder="Email Address" required>
+              <button type="submit" class="newsletter-btn" aria-label="Subscribe">
+                <i data-lucide="send" style="width: 16px; height: 16px;"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Sambasiva. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <!-- Main JavaScript -->`n  <script src="assets/js/main.js"></script>`n  `n  <!-- Enhanced Navigation JavaScript -->`n  <script src="assets/js/enhanced-navigation.js"></script>
+    <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Set current year
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('navbar-scrolled');
+      } else {
+        navbar.classList.remove('navbar-scrolled');
+      }
+    });
+
+    // Mobile menu toggle
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+      mobileToggle.classList.toggle('active');
+    });
+
+    // Scroll reveal animation
+    const revealElements = document.querySelectorAll('.reveal');
+
+    const revealOnScroll = () => {
+      revealElements.forEach(el => {
+        const elementTop = el.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+
+        if (elementTop < windowHeight - 100) {
+          el.classList.add('active');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll(); // Initial check
+
+    // Counter animation
+    const counters = document.querySelectorAll('[data-count]');
+
+    const animateCounter = (counter) => {
+      const target = parseInt(counter.getAttribute('data-count'));
+      const duration = 2000;
+      const step = target / (duration / 16);
+      let current = 0;
+
+      const update = () => {
+        current += step;
+        if (current < target) {
+          counter.textContent = Math.floor(current).toLocaleString() + '+';
+          requestAnimationFrame(update);
+        } else {
+          counter.textContent = target.toLocaleString() + '+';
+        }
+      };
+
+      update();
+    };
+
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounter(entry.target);
+          counterObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    counters.forEach(counter => counterObserver.observe(counter));
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+
+<!-- FOOTER -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="index-new.html" style="font-family: var(--font-accent); font-size: 1.85rem; color: white; text-decoration: none; display: block; margin-bottom: 1.25rem; font-weight: 700; letter-spacing: -0.5px;">
+            SAMBASIVA<span style="color: var(--gold);">.</span>
+          </a>
+          <p style="color: rgba(255, 255, 255, 0.7); line-height: 1.8; margin-bottom: 2rem; font-size: 0.95rem;">
+            Dedicated to helping individuals and organizations achieve mental wellness through professional psychological support and life skills training.
+          </p>
+          <div class="footer-social">
+            <a href="#" aria-label="LinkedIn" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: rgba(255, 255, 255, 0.1); border-radius: 50%; color: white; text-decoration: none; transition: all 0.3s ease; margin-right: 1rem;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="#" aria-label="Instagram" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: rgba(255, 255, 255, 0.1); border-radius: 50%; color: white; text-decoration: none; transition: all 0.3s ease; margin-right: 1rem;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" aria-label="Facebook" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: rgba(255, 255, 255, 0.1); border-radius: 50%; color: white; text-decoration: none; transition: all 0.3s ease; margin-right: 1rem;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+              </svg>
+            </a>
+            <a href="#" aria-label="Youtube" style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: rgba(255, 255, 255, 0.1); border-radius: 50%; color: white; text-decoration: none; transition: all 0.3s ease;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Explore -->
+        <div class="footer-column">
+          <h4 style="color: white; font-size: 1.1rem; font-weight: 600; margin-bottom: 1.5rem; font-family: var(--font-accent);">Explore</h4>
+          <ul class="footer-links" style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="index-new.html" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; transition: color 0.3s ease;">Home</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="about-new.html" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; transition: color 0.3s ease;">About Me</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="services-new.html" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; transition: color 0.3s ease;">Services</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="training-new.html" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; transition: color 0.3s ease;">Training</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="awards-gallery.html" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; transition: color 0.3s ease;">Awards</a></li>
+          </ul>
+        </div>
+
+        <!-- Blog Categories -->
+        <div class="footer-column">
+          <h4 style="color: white; font-size: 1.1rem; font-weight: 600; margin-bottom: 1.5rem; font-family: var(--font-accent);">Blog Categories</h4>
+          <ul class="footer-links" style="list-style: none; padding: 0; margin: 0;">
+            <li style="margin-bottom: 0.75rem;"><a href="#" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; transition: color 0.3s ease;">Mental Health Tips</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="#" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; transition: color 0.3s ease;">Relationship Advice</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="#" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; transition: color 0.3s ease;">Student Wellness</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="#" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; transition: color 0.3s ease;">Corporate Health</a></li>
+            <li style="margin-bottom: 0.75rem;"><a href="#" style="color: rgba(255, 255, 255, 0.7); text-decoration: none; transition: color 0.3s ease;">Personal Growth</a></li>
+          </ul>
+        </div>
+
+        <!-- Connect & Newsletter -->
+        <div class="footer-column">
+          <h4 style="color: white; font-size: 1.1rem; font-weight: 600; margin-bottom: 1.5rem; font-family: var(--font-accent);">Connect</h4>
+          <div class="footer-contact-item" style="display: flex; align-items: center; margin-bottom: 1rem; color: rgba(255, 255, 255, 0.7);">
+            <i data-lucide="mail" style="margin-right: 0.75rem; width: 18px; height: 18px;"></i>
+            <span>hello@sambasiva.com</span>
+          </div>
+          <div class="footer-contact-item" style="display: flex; align-items: center; margin-bottom: 1rem; color: rgba(255, 255, 255, 0.7);">
+            <i data-lucide="phone" style="margin-right: 0.75rem; width: 18px; height: 18px;"></i>
+            <span>+91 98765 43210</span>
+          </div>
+          <div class="footer-contact-item" style="display: flex; align-items: center; margin-bottom: 2rem; color: rgba(255, 255, 255, 0.7);">
+            <i data-lucide="map-pin" style="margin-right: 0.75rem; width: 18px; height: 18px;"></i>
+            <span>Visakhapatnam, India</span>
+          </div>
+          
+          <div class="footer-newsletter">
+            <p style="color: rgba(255, 255, 255, 0.7); margin-bottom: 1rem; font-size: 0.9rem;">Subscribe for wellness tips</p>
+            <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');" style="display: flex; gap: 0.5rem;">
+              <input type="email" class="newsletter-input" placeholder="Email Address" required style="flex: 1; padding: 0.75rem; border-radius: var(--radius-full); border: 1px solid rgba(255, 255, 255, 0.2); background: rgba(255, 255, 255, 0.1); color: white; font-size: 0.9rem;">
+              <button type="submit" class="newsletter-btn" aria-label="Subscribe" style="padding: 0.75rem; border-radius: var(--radius-full); border: none; background: var(--gradient-primary); color: white; cursor: pointer; transition: all 0.3s ease;">
+                <i data-lucide="send" style="width: 16px; height: 16px;"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom" style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 2rem; margin-top: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+        <p style="color: rgba(255, 255, 255, 0.6); margin: 0; font-size: 0.9rem;">&copy; <span id="current-year"></span> Sambasiva. All rights reserved.</p>
+        <div class="footer-bottom-links" style="display: flex; gap: 2rem;">
+          <a href="privacy.html" style="color: rgba(255, 255, 255, 0.6); text-decoration: none; transition: color 0.3s ease; font-size: 0.9rem;">Privacy Policy</a>
+          <a href="terms.html" style="color: rgba(255, 255, 255, 0.6); text-decoration: none; transition: color 0.3s ease; font-size: 0.9rem;">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Set current year
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
