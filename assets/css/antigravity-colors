@@ -1,1 +1,461 @@
 
+/* ===== ANTIGRAVITY COLOR SYSTEM ===== */
+:root {
+  /* ===== PRIMARY PALETTE - OCEAN TEAL (Trust & Healing) ===== */
+  --primary: #0D8B8B;          /* Main brand color */
+  --primary-light: #14A5A5;    /* Hover states */
+  --primary-dark: #076666;     /* Dark accents */
+  --primary-deeper: #054D4D;   /* Deep elements */
+  --primary-glow: rgba(13, 139, 139, 0.12);  /* Glow effects */
+  
+  /* ===== SECONDARY PALETTE - FOREST SAGE (Growth & Nature) ===== */
+  --secondary: #6B9B7A;        /* Supporting elements */
+  --secondary-light: #8BB89A;  /* Light variations */
+  --secondary-dark: #4F7A5C;   /* Dark variations */
+  
+  /* ===== ACCENT PALETTE - SUNRISE GOLD (Hope & Warmth) ===== */
+  --gold: #D4A24C;             /* CTAs, highlights */
+  --gold-light: #E8BE6E;       /* Light gold */
+  --gold-dark: #B8862F;        /* Dark gold */
+  
+  /* ===== WARM ACCENT - SUNSET CORAL (Compassion) ===== */
+  --coral: #E07A5F;            /* Relationships, warmth */
+  --coral-light: #EF9A85;      /* Light coral */
+  --coral-dark: #C45D44;       /* Dark coral */
+  
+  /* ===== TERTIARY PALETTE - MYSTIC LAVENDER (Wisdom) ===== */
+  --tertiary: #8B7CB5;         /* Wisdom, clarity */
+  --tertiary-light: #A899CC;   /* Light lavender */
+  --tertiary-dark: #6B5A99;    /* Dark lavender */
+  
+  /* ===== NEUTRAL BACKGROUNDS ===== */
+  --cream: #FAF7F2;            /* Main background */
+  --cream-dark: #F3EDE4;       /* Section backgrounds */
+  --cream-deeper: #EBE4D8;     /* Darker sections */
+  --white: #FFFFFF;           /* Clean white */
+  
+  /* ===== TEXT COLORS ===== */
+  --text-dark: #1E2A2A;        /* Headings */
+  --text-medium: #3A4848;      /* Subheadings */
+  --text-light: #526161;       /* Body text */
+  --text-muted: #707F7F;       /* Light text */
+  
+  /* ===== SPACING SYSTEM ===== */
+  --space-xs: 0.25rem;   /* 4px */
+  --space-sm: 0.5rem;    /* 8px */
+  --space-md: 1rem;      /* 16px */
+  --space-lg: 1.5rem;    /* 24px */
+  --space-xl: 2rem;      /* 32px */
+  --space-2xl: 3rem;     /* 48px */
+  --space-3xl: 4rem;     /* 64px */
+  
+  /* ===== BORDER RADIUS ===== */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+  --radius-full: 100px;
+  
+  /* ===== SHADOW SYSTEM ===== */
+  --shadow-sm: 0 2px 8px rgba(30, 42, 42, 0.06);
+  --shadow-md: 0 4px 20px rgba(30, 42, 42, 0.08);
+  --shadow-lg: 0 8px 40px rgba(30, 42, 42, 0.1);
+  --shadow-xl: 0 16px 60px rgba(30, 42, 42, 0.12);
+  --shadow-glow-primary: 0 8px 30px rgba(13, 139, 139, 0.25);
+  --shadow-glow-gold: 0 8px 30px rgba(212, 162, 76, 0.25);
+  
+  /* ===== TRANSITIONS ===== */
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.6s ease;
+}
+
+/* ===== BUTTON SYSTEM ===== */
+.btn {
+  padding: 0.85rem 1.75rem;
+  border-radius: 100px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(30, 42, 42, 0.08);
+}
+
+.btn:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Primary Button */
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--gold);
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 35px rgba(212, 162, 76, 0.4);
+}
+
+/* Secondary Button */
+.btn-secondary {
+  background: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  box-shadow: none;
+}
+
+.btn-secondary:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(13, 139, 139, 0.3);
+}
+
+/* Gold Button */
+.btn-gold {
+  background: var(--gold);
+  color: white;
+}
+
+.btn-gold:hover {
+  background: var(--primary);
+  transform: translateY(-3px) scale(1.02);
+}
+
+/* Coral Button */
+.btn-coral {
+  background: var(--coral);
+  color: white;
+}
+
+.btn-coral:hover {
+  background: var(--tertiary);
+  transform: translateY(-3px) scale(1.02);
+}
+
+/* Button Sizes */
+.btn-sm {
+  padding: 0.65rem 1.25rem;
+  font-size: 0.875rem;
+}
+
+.btn-lg {
+  padding: 1.1rem 2.25rem;
+  font-size: 1rem;
+}
+
+/* ===== BASIC STYLES ===== */
+body {
+  font-family: 'Outfit', sans-serif;
+  background: var(--cream);
+  color: var(--text-light);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Headings */
+h1 {
+  font-size: clamp(2.5rem, 2.5rem + 1vw, 3rem);
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: var(--space-lg);
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: clamp(2rem, 2rem + 1vw, 2.5rem);
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: var(--space-md);
+  line-height: 1.3;
+}
+
+h3 {
+  font-size: clamp(1.5rem, 1.5rem + 0.5vw, 2rem);
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: var(--space-sm);
+  line-height: 1.4;
+}
+
+p {
+  margin-bottom: var(--space-md);
+  color: var(--text-light);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-dark);
+}
+
+/* ===== SECTION STYLES ===== */
+.section {
+  padding: var(--space-3xl) 0;
+  position: relative;
+}
+
+.section-gray {
+  background: var(--cream-dark);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-title {
+  font-size: clamp(2rem, 2rem + 1vw, 3rem);
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: var(--space-lg);
+  line-height: 1.2;
+}
+
+.section-subtitle {
+  font-size: 1.125rem;
+  color: var(--text-medium);
+  line-height: 1.6;
+}
+
+/* ===== CARD COMPONENTS ===== */
+.card {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl);
+  box-shadow: var(--shadow-md);
+  transition: all 0.4s ease;
+  border: 1px solid rgba(13, 139, 139, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
+}
+
+.service-card {
+  background: var(--white);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: var(--shadow-md);
+  transition: all 0.4s ease;
+  border: 1px solid rgba(13, 139, 139, 0.1);
+}
+
+.service-card:hover {
+  transform: translateY(-12px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary);
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  background: linear-gradient(135deg, var(--cream) 0%, #E8F5F5 50%, #F5F0FA 100%);
+  padding: 6rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 2.5rem + 2vw, 4rem);
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: var(--space-lg);
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: var(--space-md);
+}
+
+.hero-description {
+  font-size: 1.125rem;
+  color: var(--text-medium);
+  margin-bottom: var(--space-2xl);
+  line-height: 1.6;
+}
+
+/* ===== NAVIGATION ===== */
+.navbar {
+  background: rgba(250, 247, 242, 0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(13, 139, 139, 0.1);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.navbar-link {
+  color: var(--text-medium);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
+  transition: all 0.3s ease;
+}
+
+.navbar-link:hover {
+  background: var(--cream);
+  color: var(--primary);
+}
+
+.navbar-link.active {
+  background: var(--primary);
+  color: white;
+}
+
+/* ===== FORM ELEMENTS ===== */
+input, textarea, select {
+  background: var(--white);
+  border: 2px solid rgba(13, 139, 139, 0.1);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  width: 100%;
+  color: var(--text-dark);
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(13, 139, 139, 0.1);
+  outline: none;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background: var(--text-dark);
+  color: var(--white);
+  padding: 3rem 0 1rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-xl);
+}
+
+.footer-section h4 {
+  color: var(--white);
+  margin-bottom: var(--space-md);
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.footer-section a {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+  color: var(--white);
+}
+
+/* ===== WHATSAPP FLOAT ===== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 56px;
+  height: 56px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  animation: wa-bounce 3s ease-in-out 2s infinite;
+  z-index: 1000;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+@keyframes wa-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 600px) {
+  .container {
+    padding: 0 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .service-card {
+    padding: 1.5rem;
+  }
+  
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar-links {
+    display: none;
+  }
+  
+  .mobile-toggle {
+    display: block;
+  }
+  
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
