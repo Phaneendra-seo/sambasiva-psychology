@@ -1,0 +1,1071 @@
+/* ==========================================================================
+   SERVICE PAGES STYLES
+   Enhanced styling for individual service and training pages
+   ========================================================================== */
+
+/* ==========================================================================
+   SERVICE HERO SECTIONS
+   ========================================================================== */
+.service-hero {
+    background: linear-gradient(135deg, rgba(224, 122, 95, 0.95) 0%, rgba(212, 162, 76, 0.9) 100%), 
+                url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1920&h=1080&fit=crop');
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.service-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.service-hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+.service-hero .hero-badge {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+
+.service-hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 1rem 0;
+    color: white;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.2);
+}
+
+.service-hero p {
+    font-size: 1.3rem;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2rem;
+}
+
+/* Training Hero Specific */
+.training-hero {
+    background: linear-gradient(135deg, rgba(13, 139, 139, 0.95) 0%, rgba(107, 155, 122, 0.9) 100%), 
+                url('https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=1920&h=1080&fit=crop');
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.training-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.training-hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    padding: 2rem;
+}
+
+/* ==========================================================================
+   PROBLEM CARDS
+   ========================================================================== */
+.problem-card {
+    border-left: 4px solid var(--coral);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.problem-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--gradient-coral);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.problem-card:hover::before {
+    transform: scaleX(1);
+}
+
+.problem-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(224, 122, 95, 0.15);
+}
+
+.problem-card .service-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--gradient-coral);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 8px 25px rgba(224, 122, 95, 0.3);
+}
+
+.problem-card h3 {
+    color: var(--coral-dark);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.problem-card p {
+    color: var(--text-medium);
+    line-height: 1.7;
+}
+
+/* ==========================================================================
+   SOLUTION HIGHLIGHTS
+   ========================================================================== */
+.solution-highlight {
+    background: linear-gradient(135deg, rgba(224, 122, 95, 0.1) 0%, rgba(212, 162, 76, 0.05) 100%);
+    border-left: 4px solid var(--coral);
+    padding: 2rem;
+    border-radius: 16px;
+    position: relative;
+}
+
+.solution-highlight::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--gradient-coral);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.solution-highlight:hover::before {
+    transform: scaleX(1);
+}
+
+.solution-highlight h3 {
+    color: var(--coral-dark);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.solution-highlight h4 {
+    color: var(--coral-dark);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.solution-highlight p {
+    color: var(--text-medium);
+    line-height: 1.7;
+}
+
+/* ==========================================================================
+   PROCESS TIMELINE
+   ========================================================================== */
+.process-timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.process-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: var(--gradient-coral);
+    border-radius: 2px;
+}
+
+.process-step {
+    position: relative;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+}
+
+.process-step::before {
+    content: '';
+    position: absolute;
+    left: -2.5rem;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background: var(--coral);
+    border-radius: 50%;
+    border: 3px solid white;
+    box-shadow: 0 4px 15px rgba(224, 122, 95, 0.3);
+}
+
+.process-step h3 {
+    color: var(--coral-dark);
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.process-step p {
+    color: var(--text-medium);
+    line-height: 1.7;
+}
+
+/* ==========================================================================
+   SKILLS CARDS
+   ========================================================================== */
+.skill-card {
+    border-left: 4px solid var(--primary);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.skill-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--gradient-primary);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover::before {
+    transform: scaleX(1);
+}
+
+.skill-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(13, 139, 139, 0.15);
+}
+
+.skill-card .service-icon {
+    width: 40px;
+    height: 40px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: white;
+    font-weight: 700;
+    font-family: var(--font-display);
+    box-shadow: 0 8px 25px rgba(13, 139, 139, 0.3);
+}
+
+.skill-card h4 {
+    color: var(--primary-dark);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.skill-card p {
+    color: var(--text-medium);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   WHO BADGE
+   ========================================================================== */
+.who-badge {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: white;
+    padding: 0.5rem 1.25rem;
+    border-radius: 50px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    box-shadow: 0 8px 25px rgba(13, 139, 139, 0.3);
+    margin-bottom: 1.5rem;
+}
+
+/* ==========================================================================
+   BENEFIT HIGHLIGHTS
+   ========================================================================== */
+.benefit-highlight {
+    background: linear-gradient(135deg, rgba(13, 139, 139, 0.1) 0%, rgba(107, 155, 122, 0.05) 100%);
+    border-left: 4px solid var(--primary);
+    padding: 2rem;
+    border-radius: 16px;
+    position: relative;
+}
+
+.benefit-highlight::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--gradient-primary);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.benefit-highlight:hover::before {
+    transform: scaleX(1);
+}
+
+.benefit-highlight h3 {
+    color: var(--primary-dark);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.benefit-highlight h4 {
+    color: var(--primary-dark);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.benefit-highlight p {
+    color: var(--text-medium);
+    line-height: 1.7;
+}
+
+.benefit-highlight ul {
+    color: var(--text-medium);
+    line-height: 1.8;
+}
+
+.benefit-highlight li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.benefit-highlight li::before {
+    content: '>';
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+/* ==========================================================================
+   ENHANCED TESTIMONIALS
+   ========================================================================== */
+.testimonial-card {
+    border-radius: 16px;
+    padding: 2rem;
+    background: white;
+    box-shadow: 0 10px 30px rgba(30, 42, 42, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+
+.testimonial-card::before {
+    content: '"';
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+    font-size: 4rem;
+    color: var(--primary);
+    opacity: 0.1;
+    font-family: Georgia, serif;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(30, 42, 42, 0.15);
+}
+
+.testimonial-content {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial-info h4 {
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.25rem;
+}
+
+.testimonial-info p {
+    color: var(--text-medium);
+    font-size: 0.9rem;
+}
+
+.testimonial-rating {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.testimonial-rating i {
+    color: var(--gold);
+    width: 16px;
+    height: 16px;
+}
+
+/* ==========================================================================
+   FAQ CARDS
+   ========================================================================== */
+.faq-card {
+    border-radius: 16px;
+    padding: 2rem;
+    background: white;
+    box-shadow: 0 10px 30px rgba(30, 42, 42, 0.08);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 1rem;
+}
+
+.faq-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(30, 42, 42, 0.12);
+}
+
+.faq-card h4 {
+    color: var(--coral-dark);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+}
+
+.faq-card p {
+    color: var(--text-medium);
+    line-height: 1.7;
+}
+
+/* ==========================================================================
+   CTA SECTIONS
+   ========================================================================== */
+.cta-section-gradient {
+    background: linear-gradient(135deg, var(--gradient-coral), var(--gradient-gold));
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section-gradient::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    animation: float 20s infinite linear;
+}
+
+.cta-section-gradient .cta-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.cta-section-gradient h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.cta-section-gradient p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-section-gradient .cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-section-gradient .btn-white {
+    background: white;
+    color: var(--coral);
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cta-section-gradient .btn-white:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(255,255,255,0.3);
+}
+
+.cta-section-gradient .btn-ghost {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cta-section-gradient .btn-ghost:hover {
+    background: white;
+    color: var(--coral);
+}
+
+/* ==========================================================================
+   MOBILE RESPONSIVENESS
+   ========================================================================== */
+
+/* Large Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+    .service-hero,
+    .training-hero {
+        min-height: 60vh;
+        padding: 3rem 0;
+    }
+    
+    .service-hero h1,
+    .training-hero h1 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+    }
+
+    .service-hero p,
+    .training-hero p {
+        font-size: 1.1rem;
+    }
+    
+    .service-hero-content,
+    .training-hero-content {
+        padding: 1.5rem;
+        max-width: 90%;
+    }
+
+    .process-timeline {
+        padding-left: 1rem;
+    }
+
+    .process-step {
+        padding-left: 1.5rem;
+    }
+
+    .process-step::before {
+        left: -1.5rem;
+        width: 16px;
+        height: 16px;
+        border-width: 2px;
+    }
+
+    .cta-section-gradient h2 {
+        font-size: 2rem;
+    }
+
+    .cta-section-gradient .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .cta-section-gradient .btn-white,
+    .cta-section-gradient .btn-ghost {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+    
+    .problem-card,
+    .skill-card {
+        margin-bottom: 1rem;
+    }
+    
+    .testimonial-card {
+        padding: 1.5rem;
+    }
+}
+
+/* Small Tablets & Large Phones (576px - 767px) */
+@media (max-width: 767px) {
+    .service-hero,
+    .training-hero {
+        min-height: 50vh;
+        padding: 2rem 0;
+    }
+
+    .service-hero h1,
+    .training-hero h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .service-hero p,
+    .training-hero p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    .service-hero-content,
+    .training-hero-content {
+        padding: 1rem;
+        max-width: 95%;
+    }
+    
+    .service-hero .hero-badge {
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .solution-highlight,
+    .benefit-highlight {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .solution-highlight h3,
+    .benefit-highlight h3 {
+        font-size: 1.3rem;
+    }
+    
+    .solution-highlight h4,
+    .benefit-highlight h4 {
+        font-size: 1rem;
+    }
+
+    .process-step {
+        padding-bottom: 1.5rem;
+        padding-left: 1rem;
+    }
+    
+    .process-step::before {
+        left: -1rem;
+        width: 14px;
+        height: 14px;
+    }
+    
+    .process-step h3 {
+        font-size: 1.1rem;
+    }
+    
+    .process-step p {
+        font-size: 0.95rem;
+    }
+
+    .cta-section-gradient .cta-content {
+        padding: 3rem 1rem;
+    }
+
+    .cta-section-gradient h2 {
+        font-size: 1.75rem;
+        line-height: 1.3;
+    }
+
+    .cta-section-gradient p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    .problem-card,
+    .skill-card {
+        padding: 1.5rem;
+    }
+    
+    .problem-card h3,
+    .skill-card h4 {
+        font-size: 1.1rem;
+    }
+    
+    .problem-card p,
+    .skill-card p {
+        font-size: 0.95rem;
+    }
+    
+    .testimonial-card {
+        padding: 1.5rem;
+    }
+    
+    .testimonial-content {
+        font-size: 1rem;
+    }
+    
+    .testimonial-author {
+        gap: 0.75rem;
+    }
+    
+    .testimonial-avatar {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .faq-card {
+        padding: 1.5rem;
+    }
+    
+    .faq-card h4 {
+        font-size: 1rem;
+    }
+    
+    .faq-card p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Mobile Phones (320px - 575px) */
+@media (max-width: 575px) {
+    .service-hero,
+    .training-hero {
+        min-height: 45vh;
+        padding: 1.5rem 0;
+    }
+
+    .service-hero h1,
+    .training-hero h1 {
+        font-size: 1.6rem;
+        line-height: 1.2;
+    }
+
+    .service-hero p,
+    .training-hero p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+    
+    .service-hero-content,
+    .training-hero-content {
+        padding: 0.75rem;
+        max-width: 98%;
+    }
+    
+    .service-hero .hero-badge {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.8rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .solution-highlight,
+    .benefit-highlight {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .solution-highlight h3,
+    .benefit-highlight h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .solution-highlight h4,
+    .benefit-highlight h4 {
+        font-size: 0.95rem;
+    }
+    
+    .solution-highlight p,
+    .benefit-highlight p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .process-timeline {
+        padding-left: 0.5rem;
+    }
+    
+    .process-step {
+        padding-bottom: 1rem;
+        padding-left: 0.75rem;
+    }
+    
+    .process-step::before {
+        left: -0.75rem;
+        width: 12px;
+        height: 12px;
+        border-width: 2px;
+    }
+    
+    .process-step h3 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .process-step p {
+        font-size: 0.9rem;
+    }
+
+    .cta-section-gradient .cta-content {
+        padding: 2rem 0.75rem;
+    }
+
+    .cta-section-gradient h2 {
+        font-size: 1.5rem;
+        line-height: 1.3;
+        margin-bottom: 1rem;
+    }
+
+    .cta-section-gradient p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+    }
+    
+    .cta-section-gradient .btn-white,
+    .cta-section-gradient .btn-ghost {
+        padding: 0.85rem 1.5rem;
+        font-size: 0.9rem;
+        max-width: 250px;
+    }
+    
+    .problem-card,
+    .skill-card {
+        padding: 1rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .problem-card .service-icon,
+    .skill-card .service-icon {
+        width: 35px;
+        height: 35px;
+        flex-shrink: 0;
+    }
+    
+    .problem-card h3 {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .skill-card h4 {
+        font-size: 0.95rem;
+        margin-bottom: 0.4rem;
+    }
+    
+    .problem-card p,
+    .skill-card p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+    
+    .testimonial-card {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .testimonial-content {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        margin-bottom: 1rem;
+    }
+    
+    .testimonial-author {
+        gap: 0.5rem;
+    }
+    
+    .testimonial-avatar {
+        width: 35px;
+        height: 35px;
+    }
+    
+    .testimonial-info h4 {
+        font-size: 0.9rem;
+    }
+    
+    .testimonial-info p {
+        font-size: 0.8rem;
+    }
+    
+    .testimonial-rating i {
+        width: 14px;
+        height: 14px;
+    }
+    
+    .faq-card {
+        padding: 1rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .faq-card h4 {
+        font-size: 0.95rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .faq-card p {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+    
+    .who-badge {
+        font-size: 0.8rem;
+        padding: 0.4rem 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .benefit-highlight ul {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+    
+    .benefit-highlight li {
+        margin-bottom: 0.4rem;
+        padding-left: 1.2rem;
+    }
+}
+
+/* Landscape Orientation for Mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .service-hero,
+    .training-hero {
+        min-height: 70vh;
+        padding: 1rem 0;
+    }
+    
+    .service-hero h1,
+    .training-hero h1 {
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .service-hero p,
+    .training-hero p {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+    
+    .cta-section-gradient .cta-content {
+        padding: 1.5rem 0.75rem;
+    }
+    
+    .cta-section-gradient h2 {
+        font-size: 1.3rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .cta-section-gradient p {
+        font-size: 0.85rem;
+        margin-bottom: 1rem;
+    }
+}
+
+/* ==========================================================================
+   ANIMATION ENHANCEMENTS
+   ========================================================================== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ==========================================================================
+   ACCESSIBILITY ENHANCEMENTS
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Focus styles */
+.faq-card:focus,
+.skill-card:focus,
+.problem-card:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .problem-card,
+    .skill-card {
+        border: 2px solid var(--text-medium);
+    }
+    
+    .solution-highlight,
+    .benefit-highlight {
+        border: 2px solid var(--primary);
+    }
+}
